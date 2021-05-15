@@ -59,14 +59,16 @@ append_row("Google homepage", "https://rajdeepdev10.github.io/google-hompage/", 
 
 
 
+// addeventListener for filter
+filter.addEventListener("click", filter_table);
 
 
 // filters table
 function filter_table () {
     let language_arr = get_language_arr();
     const rows = document.getElementsByTagName("tr");
-    console.log(filter.value);
 
+    // populate table first
     for (let i = 1; i < rows.length; i++) {
         // if (filter.value !== "") {
         //     rows[i].style.display = "";
