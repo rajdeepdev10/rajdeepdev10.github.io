@@ -34,6 +34,7 @@ function append_row (title, title_link, description, language, source_code_link,
 
 append_row("Timestamp Microservice^", "http://timestamp-microservice-by-raj.herokuapp.com/", "Generates a timestamp API based on a chosen date by user", "Node.js, Express", "https://github.com/rajdeepdev10/fcc-timestamp-microservice", "freeCodeCamp API Micsvc");
 append_row("Mail*", "https://cs50-mail-by-raj.herokuapp.com/", "Designed the frontend for an email client that makes API calls to send and receive emails", "JavaScript", "", "CS50's Web Programming");
+append_row("Tic-tac-toe", "https://rajdeepdev10.github.io/tic-tac-toe", "A Tic-tac-toe game to play in the web browser", "HTML/CSS/JavaScript", "https://github.com/rajdeepdev10/tic-tac-toe", "The Odin Proj JavaScript");
 append_row("Methanol Process Simulation", "https://rajdeepdev10.github.io/methanol-process-simulation/", "A webpage for CHBE 370 term project", "Markdown, Jekyll", "https://github.com/rajdeepdev10/methanol-process-simulation", "-");
 append_row("Treemap Diagram", "https://rajdeepdev10.github.io/treemap-diagram", "Visualizing top 95 selling movies worldwide by category", "D3.js, HTML/CSS", "https://github.com/rajdeepdev10/treemap-diagram", "freeCodeCamp Data Vis");
 append_row("Choropleth Map", "https://rajdeepdev10.github.io/choropleth-map", "A choropleth map of education attainment in the US", "D3.js, HTML/CSS", "https://github.com/rajdeepdev10/choropleth-map", "freeCodeCamp Data Vis");
