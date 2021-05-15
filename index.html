@@ -15,12 +15,26 @@
     <meta charset="UTF-8"/>
     <meta name="google-site-verification" content="kXzZiI6WVNenBPTKV0fkMtNogDnP0HrSOSlupa79TYQ" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
     <link href="./images/favicon.ico" rel="icon">
+    <style>
+      html {
+        background-color: aqua;
+      }
+      a {
+        text-decoration: none;
+        color: blue;
+      }
+      hr {
+        border: 1px solid rgba(0, 0, 0, 0.7);
+      }
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>Rajdeep Dev</h1>
+    <h1 style="text-align: center;">Rajdeep Dev</h1>
 
     <h2><u>About me</u></h2>
     <p>I am an undergraduate student in the department of Chemical and Biological Engineering at University of British Columbia.
@@ -32,7 +46,7 @@
     <ul>
       <li>APSC 160: Introduction to Computation in Engineering Design</li>
       <li>CHBE 230: Computational Methods</li>
-      <li>CHBE 356: Process Dynamics and Control (in progress)</li>
+      <li>CHBE 356: Process Dynamics and Control</li>
       <li>CPSC 110: Computation, Programs, and Programming</li>
       <li>MATH 152: Linear Systems</li>
       <li>MATH 253: Multivariable Calculus</li>
@@ -46,17 +60,22 @@
       <li>CS50's Introduction to Computer Science</li>
       <li>CS50's Web Programming with Python and JavaScript (in progress)</li>
     </ul>
-    <h3>Princeton University (w/ Coursera)</h3>
+    <h3>Stanford University (w/ Coursera)</h3>
     <ul>
-      <li>Algorithms, Part I (planned)</li>
-      <li>Algorithms, Part II (planned)</li>
+      <li>Algorithms Specialization (in progress)</li>
+        <ul>
+          <li>Course 1: Divide and Conquer, Sorting and Searching, and Randomized Algorithms</li>
+          <li>Course 2: Graph Search, Shortest Paths, and Data Structures</li>
+          <li>Course 3: Greedy Algorithms, Minimum Spanning Trees, and Dynamic Programming</li>
+          <li>Course 4: Shortest Paths Revisited, NP-Complete Problems and What To Do About Them</li>
+        </ul>
     </ul>
         <h3>freeCodeCamp</h3>
     <ul>
       <li>JavaScript Algorithms and Data Structures</li>
       <li>Front End Development Libraries</li>
-      <li>Data Visualization (in progress)</li>
-      <li>APIs and Microservices (planned)</li>
+      <li>Data Visualization</li>
+      <li>APIs and Microservices (in progress)</li>
       <li>Quality Assurance (planned)</li>
     </ul>
       <h3>The Odin Project</h3>
@@ -65,8 +84,15 @@
         <li>Full Stack JavaScript (in progress)</li>
       </ul>
 
-    <h2><u>Projects</u></h2>
-    <table>
+
+
+    <h2><u>Skills</u></h2>
+    <b><u>Languages:</u></b> Python, JavaScript, SQL, HTML, CSS, C<br>
+    <b><u>Frameworks/Libraries:</u></b> React, Flask, Django, jQuery, D3.js, Bootstrap, Node.js, Express, MongoDB<br>
+    <b><u>Tools:</u></b> Git, Jupyter, LaTeX, Markdown
+
+    <h2><u>Web Projects</u></h2>
+    <table id="course-table">
       <tr>
         <th>Title</th>
         <th>Description</th>
@@ -74,125 +100,25 @@
         <th>Source Code</th>
         <th>Course</th>
       </tr>
-      <tr>
-        <td><a href="https://cs50-commerce-by-raj.herokuapp.com/">Commerce</a>*</td>
-        <td>An eBay-like e-commerce auction site</td>
-        <td>Django, SQL</td>
-        <td>N/A</td>
-        <td>CS50's Web Programming</td>
-      </tr>
-      <tr>
-        <td><a href="https://cs50-wiki-by-raj.herokuapp.com/">Wiki</a>*</td>
-        <td>A Wikipedia-like online encyclopedia</td>
-        <td>Django</td>
-        <td>N/A</td>
-        <td>CS50's Web Programming</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/search/">Search</a></td>
-        <td>A front end for Google, Google Image, and Google Advanced Search</td>
-        <td>HTML/CSS</td>
-        <td><a href="https://github.com/rajdeepdev10/search">Click here</a></td>
-        <td>CS50's Web Programming</td>
-      </tr>
-      <tr>
-        <td>UBC50</td>
-        <td>A Chrome Extension with a clock, weather, and a todo app</td>
-        <td>jQuery, HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/UBC50">Click here</a></td>
-        <td>CS50x</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/pomodoro_clock/">Pomodoro Clock</a></td>
-        <td>A Pomodoro timer app</td>
-        <td>React, HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/pomodoro_clock">Click here</a></td>
-        <td>freeCodeCamp Front End</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/javascript_calculator/">JavaScript Calculator</a></td>
-        <td>A simple react calculator</td>
-        <td>React, HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/javascript_calculator">Click here</a></td>
-        <td>freeCodeCamp Front End</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/drum_machine/">Drum Machine</a></td>
-        <td>A drum machine simulator</td>
-        <td>jQuery, Bootstrap, HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/drum_machine">Click here</a></td>
-        <td>freeCodeCamp Front End</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/markdown_previewer/">Markdown Previewer</a></td>
-        <td>Previewer for Markdown syntax</td>
-        <td>Bootstrap, HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/markdown_previewer">Click here</a></td>
-        <td>freeCodeCamp Front End</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/random-quote-machine/">Random Quote Machine</a></td>
-        <td>A random quote generator of F1 drivers</td>
-        <td>Bootstrap, HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/random-quote-machine">Click here</a></td>
-        <td>freeCodeCamp Front End</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/library/">Library</a></td>
-        <td>A virtual 'library' app</td>
-        <td>HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/library">Click here</a></td>
-        <td>The Odin Proj JavaScript</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/calculator/">Calculator</a></td>
-        <td>A simple javascript calculator</td>
-        <td>HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/calculator">Click here</a></td>
-        <td>The Odin Proj Foundations</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/homepage/">Homepage</a></td>
-        <td>A static webpage using Bootstrap</td>
-        <td>Bootstrap, HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/homepage">Click here</a></td>
-        <td>CS50x</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/etch-a-sketch/">Etch-a-sketch</a></td>
-        <td>Browser version of something between a sketchpad and an Etch-A-Sketch</td>
-        <td>HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/etch-a-sketch">Click here</a></td>
-        <td>The Odin Proj Foundations</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/rock-paper-scissors/">Rock-paper-scissors</a></td>
-        <td>The classic RPS game</td>
-        <td>HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/rock-paper-scissors">Click here</a></td>
-        <td>The Odin Proj Foundations</td>
-      </tr>
-      <tr>
-        <td><a href="https://rajdeepdev10.github.io/google-hompage/">Google homepage</a></td>
-        <td>Clone of google.com</td>
-        <td>HTML/CSS/JavaScript</td>
-        <td><a href="https://github.com/rajdeepdev10/google-hompage">Click here</a></td>
-        <td>The Odin Proj Foundations</td>
-      </tr>
+      <!--rows appended below-->
+
     </table>
 
-    <p>* Projects with a '*' are built from CS50's distribution code</p>
-
-    <h2><u>Skills</u></h2>
-    <b><u>Languages:</u></b> Python, JavaScript, SQL, HTML, CSS, C<br>
-    <b><u>Frameworks/Libraries:</u></b> React, Redux, Flask, Django, jQuery, D3, Bootstrap, Numpy<br>
-    <b><u>Tools:</u></b> Git, Jupyter, LaTeX, Markdown
+    <ul>
+      <li>Projects with a '*' are built from CS50's distribution code</li>
+      <li>Projects with a '^' are built from freeCodeCamp's boilerplate code</li>
+    </ul>
 
   </body>
   <footer>
     <hr>
-    <p>Author: <a href = "https://github.com/rajdeepdev10">Rajdeep Dev</a> 🇧🇩 🇨🇦<br>
-    Last Updated: 02/20/21<br>
-    <a href="mailto:dev10@student.ubc.ca">dev10@student.ubc.ca</a></p>
+    <p>Author: Rajdeep Dev<br>
+    <a href="https://github.com/rajdeepdev10">Github</a>
+    <a href="https://www.youtube.com/channel/UCHdTouI4bc9XPlkAJq3NJsA">Youtube</a>
+    <a href="https://twitter.com/rajdeepdev10">Twitter</a><br>
+    Last Updated: 14/05/21<br>
+    <a href="mailto:dev10@student.ubc.ca">dev10@student.ubc.ca</a>
+    </p>
   </footer>
+  <script src="script.js"></script>
 </html>
