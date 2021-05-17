@@ -33,7 +33,7 @@ function append_row (title, title_link, description, language, source_code_link,
 
 
 append_row("Timestamp Microservice^", "http://timestamp-microservice-by-raj.herokuapp.com/", "Generates a timestamp API based on a chosen date by user", ["Node.js", "Express"], "https://github.com/rajdeepdev10/fcc-timestamp-microservice", "freeCodeCamp API Micsvc");
-append_row("Mail*", "https://cs50-mail-by-raj.herokuapp.com/", "Designed the frontend for an email client that makes API calls to send and receive emails", ["JavaScript"], "", "CS50's Web Programming");
+append_row("Mail*", "https://cs50-mail-by-raj.herokuapp.com/", "An email client that makes API calls to send and receive emails", ["JavaScript"], "", "CS50's Web Programming");
 append_row("Tic-tac-toe", "https://rajdeepdev10.github.io/tic-tac-toe", "A Tic-tac-toe game to play in the web browser", ["HTML", "CSS", "JavaScript"], "https://github.com/rajdeepdev10/tic-tac-toe", "The Odin Proj JavaScript");
 append_row("Methanol Process Simulation", "https://rajdeepdev10.github.io/methanol-process-simulation/", "A webpage for CHBE 370 term project", ["Markdown", "Jekyll"], "https://github.com/rajdeepdev10/methanol-process-simulation", "-");
 append_row("Treemap Diagram", "https://rajdeepdev10.github.io/treemap-diagram", "Visualizing top 95 selling movies worldwide by category", ["D3.js", "HTML", "CSS"], "https://github.com/rajdeepdev10/treemap-diagram", "freeCodeCamp Data Vis");
@@ -53,14 +53,14 @@ append_row("Random Quote Machine", "https://rajdeepdev10.github.io/random-quote-
 append_row("Library", "https://rajdeepdev10.github.io/library/", "A virtual 'library' app", ["HTML", "CSS", "JavaScript"], "https://github.com/rajdeepdev10/library", "The Odin Proj JavaScript");
 append_row("Calculator", "https://rajdeepdev10.github.io/calculator/", "A simple javascript calculator", ["HTML", "CSS", "JavaScript"], "Click here", "The Odin Proj Foundations");
 append_row("Homepage", "https://rajdeepdev10.github.io/homepage/", "A static webpage using Bootstrap", ["Bootstrap", "HTML", "CSS", "JavaScript"], "https://github.com/rajdeepdev10/homepage", "CS50x");
-append_row("Etch-a-sketch", "https://rajdeepdev10.github.io/etch-a-sketch/", "Browser version of something between a sketchpad and an Etch-A-Sketch", ["HTML", "CSS", "JavaScript"], "https://github.com/rajdeepdev10/etch-a-sketch", "The Odin Proj Foundations");
+append_row("Etch-a-sketch", "https://rajdeepdev10.github.io/etch-a-sketch/", "Something between a sketchpad and an Etch-A-Sketch", ["HTML", "CSS", "JavaScript"], "https://github.com/rajdeepdev10/etch-a-sketch", "The Odin Proj Foundations");
 append_row("Rock-paper-scissors", "https://rajdeepdev10.github.io/rock-paper-scissors/", "The classic RPS game", ["HTML", "CSS", "JavaScript"], "https://github.com/rajdeepdev10/rock-paper-scissors", "The Odin Proj Foundations");
 append_row("Google homepage", "https://rajdeepdev10.github.io/google-hompage/", "	Clone of google.com", ["HTML", "CSS", "JavaScript"], "https://github.com/rajdeepdev10/google-hompage", "The Odin Proj Foundations");
 
 
 
 // addeventListener for filter
-filter.addEventListener("click", filter_table);
+filter.addEventListener("change", filter_table);
 
 
 // filters table
@@ -70,15 +70,12 @@ function filter_table () {
 
     // populate table first
     for (let i = 1; i < rows.length; i++) {
-        // if (filter.value !== "") {
-        //     rows[i].style.display = "";
-        // }
-        rows[i].style.display = "";
+        rows[i].classList.remove("hide");
     }
 
     for (let i = 1; i < rows.length; i++) {
         if (!language_arr[i-1].includes(filter.value) && filter.value !== "") {
-            rows[i].style.display = "none";
+            rows[i].classList.add("hide");
         }
     }
 

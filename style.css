@@ -1,0 +1,36 @@
+/*@keyframes hiderow {*/
+/*    0% {*/
+/*        opacity: 1;*/
+/*    }*/
+
+/*    100% {*/
+/*        opacity: 0;*/
+/*    }*/
+/*}*/
+
+
+html {
+    background-color: aqua;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+hr {
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+table, th, td {
+    border: 1px solid black;
+    table-layout: fixed;
+}
+
+.hide {
+    display: none;
+}
+
+/*tr {*/
+/*    animation-name: hiderow;*/
+/*    animation-duration: 2s;*/
+/*    animation-fill-mode: forwards;*/
+/*    animation-play-state: paused;*/
+/*}*/
