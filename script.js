@@ -31,7 +31,11 @@ function append_row (title, title_link, description, language, source_code_link,
 
 }
 
-
+append_row("Network*", "", "A Twitter-like social network website for making posts and following users.", ["Django", "JavaScript", "Bootstrap", "SQL"], "", "CS50's Web Programming");
+append_row("File Metadata Microservice^", "https://filemetadata.rajdeepdev.repl.co/", "Privides metadata for any file", ["Node.js", "Express"], "https://replit.com/@rajdeepdev/filemetadata", "freeCodeCamp API Micsvc");
+append_row("Exercise Tracker^", "https://exercisetracker.rajdeepdev.repl.co/", "An API that stores JSON exercise logs", ["Node.js", "Express", "MongoDB", "Mongoose"], "https://replit.com/@rajdeepdev/exercisetracker", "freeCodeCamp API Micsvc");
+append_row("URL Shortener Microservice^", "https://urlshortener.rajdeepdev.repl.co/", "An API that stores and queries URL as unique IDs", ["Node.js", "Express", "MongoDB", "Mongoose"], "https://replit.com/@rajdeepdev/urlshortener", "freeCodeCamp API Micsvc");
+append_row("Request Header Parser Microservice^", "https://headerparser.rajdeepdev.repl.co", "An API that responds with user's IP address, preferred languages and system infos", ["Node.js", "Express"], "https://replit.com/@rajdeepdev/headerparser", "freeCodeCamp API Micsvc");
 append_row("Timestamp Microservice^", "http://timestamp-microservice-by-raj.herokuapp.com/", "Generates a timestamp API based on a chosen date by user", ["Node.js", "Express"], "https://github.com/rajdeepdev10/fcc-timestamp-microservice", "freeCodeCamp API Micsvc");
 append_row("Mail*", "https://cs50-mail-by-raj.herokuapp.com/", "An email client that makes API calls to send and receive emails", ["JavaScript"], "", "CS50's Web Programming");
 append_row("Tic-tac-toe", "https://rajdeepdev10.github.io/tic-tac-toe", "A Tic-tac-toe game to play in the web browser", ["HTML", "CSS", "JavaScript"], "https://github.com/rajdeepdev10/tic-tac-toe", "The Odin Proj JavaScript");
