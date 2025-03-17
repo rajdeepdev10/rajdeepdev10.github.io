@@ -12,6 +12,10 @@
 body {
     background-color: #ffffe4;
     cursor: url('./assets/cursor.cur'), auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
 }
 a {
     text-decoration: none;
