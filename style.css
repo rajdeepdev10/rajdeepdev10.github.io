@@ -9,14 +9,13 @@
 /*}*/
 
 body, footer {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
 }
 
 body {
     background-color: #ffffe4;
     cursor: url('./assets/cursor.cur'), auto;
-    max-width: 800px;
 }
 a {
     text-decoration: none;
