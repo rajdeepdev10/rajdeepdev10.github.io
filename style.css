@@ -8,13 +8,11 @@
 /*    }*/
 /*}*/
 
-body, footer {
-    max-width: 1400px;
-    margin: auto;
-}
-
 body {
     background-color: #ffffe4;
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px;
     cursor: url('./assets/cursor.cur'), auto;
 }
 a {
